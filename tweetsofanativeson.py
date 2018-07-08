@@ -8,5 +8,5 @@ search_results = twitter.search(q="james baldwin", count=1, results_type='popula
 try:
     for tweet in search_results["statuses"]:
         twitter.retweet(id = tweet["id_str"])
-except TwythonError as e:
-    print e
+except TwythonError:
+    pass
