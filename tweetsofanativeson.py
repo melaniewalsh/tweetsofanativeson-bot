@@ -4,7 +4,7 @@ from secrets import *
 twitter = Twython(app_key, app_secret, oauth_token, oauth_token_secret)
 
 #Setting Twitter's search results as a variable
-search_results = twitter.search(q="james baldwin", count=15, result_type="popular")
+search_results = twitter.search(q="james baldwin", count=20, result_type="popular")
 
 tweet_counter=0
 
